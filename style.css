@@ -1,0 +1,122 @@
+body{
+    width: 1124px;
+    padding: 0 81px;
+    font-family: Roboto, 'Segoe UI';
+}
+.header-top{
+  box-shadow: 0 0 16px var(--color-gray);
+  position: sticky;
+  top: 0px;
+  background-color: var(--color-light);  
+  z-index: 100;
+  max-width: 100%;
+  position: fixed;
+  box-shadow: 0 14px 6px -6px rgba(38, 38, 38, 0.13);
+}
+.h-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 72px;
+    gap: 702px;
+}
+.h-logo{
+    padding: 0 12px ;
+}
+.h-cabinet{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.nav-button{
+    width: 78px;
+    height: 40px;
+    background-color: white;
+    border: 2px solid rgba(224, 224, 224, 1);
+}
+.search-container{
+    margin-top: 90px;
+    width: 962px;
+    height: 48px;
+    text-align: inherit;
+    border-bottom: 2px solid rgba(224, 224, 224, 1);
+    text-decoration: none;
+    
+}
+.search-input{
+   width: 962px; 
+   border: none;
+   outline: none;
+   color: rgba(98, 98, 98, 1);
+   text-decoration: none;
+}
+#search-input-main{
+    padding-top:30px ;
+    text-decoration: none;
+}    
+
+.stores-cards{
+     display: grid;  
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+  margin-bottom: 50px;
+}
+.m-name-header {
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.stores-card {  
+  text-decoration: none;
+  color: var(--color-dark);
+}
+
+.stores-card:hover {
+  background-color: var(--color-lightergray);
+}
+
+.stores-card-pic {
+  width: 100%;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+.stores-card-pic img {
+  transition: 0.3s;
+  width: 100%;
+}
+
+.stores-card-pic img:hover {
+  transform: scale(1.03);
+}
+
+.store-name {
+  margin-top: 0.9rem;
+}
+
+.store-type {
+  color: var(--color-darkgray);
+  font-size: 0.875rem;
+}
+
+.store-time {
+  font-size: 0.8125rem;
+}
+
+.store-name,
+.store-time,
+.store-type {
+  margin-bottom: 0.35rem;
+}
+
+@media screen and (max-width: 768px) {
+  .stores-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .stores-cards {
+    grid-template-columns: 1fr;
+  }
+}
