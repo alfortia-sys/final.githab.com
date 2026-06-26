@@ -1,10 +1,14 @@
 body{
     width: 1124px;
-    padding: 0 81px;
+    padding-left: 81px;
+    padding-right: 87px;
     font-family: Roboto, 'Segoe UI';
+    border: 2px solid green;
 }
+
 .header-top{
-  box-shadow: 0 0 16px var(--color-gray);
+  display: flex;
+  justify-content: center;
   position: sticky;
   top: 0px;
   background-color: var(--color-light);  
@@ -12,6 +16,8 @@ body{
   max-width: 100%;
   position: fixed;
   box-shadow: 0 14px 6px -6px rgba(38, 38, 38, 0.13);
+   
+  
 }
 .h-title{
     display: flex;
@@ -49,6 +55,7 @@ body{
    outline: none;
    color: rgba(98, 98, 98, 1);
    text-decoration: none;
+   padding-left: 81px;
 }
 #search-input-main{
     padding-top:30px ;
@@ -56,7 +63,8 @@ body{
 }    
 .stores-cards{
   display: flex;
-  gap: 36px;
+  justify-content: center;
+  gap: 16px;
   flex-wrap: wrap;
   width: 100%;
 }
