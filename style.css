@@ -56,9 +56,9 @@ body{
 }    
 .stores-cards{
   display: flex;
-  gap: 16px;
+  gap: 36px;
   flex-wrap: wrap;
-  max-width: 1124px;
+  width: 100%;
 }
 .s-container{
   width: 308px;
@@ -102,6 +102,7 @@ body{
 footer{
   background-color: black;
   margin: 80px auto;
+  max-width: 100%;
   }
   .footer-logo{
     padding-bottom: 40px;
