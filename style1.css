@@ -11,8 +11,7 @@ body{
   top: 0px;
   background-color: var(--color-light);  
   width: 1124px;
-  position: fixed;
-  box-shadow: 0 14px 6px -6px rgba(38, 38, 38, 0.13);
+  
  }
  @media screen and (max-width: 768px) {
   .header-top {
@@ -54,94 +53,49 @@ body{
     margin: 0 ;
   } 
 }
-.search-container{
-    margin-top: 90px;
-    width: 962px;
-    height: 48px;
-    text-align: inherit;
-    border-bottom: 2px solid rgba(224, 224, 224, 1);
-    text-decoration: none;
-    margin-left: 81px;
+.h-container{
+    background-image: url("imgs/logo2.png");
+    width: 1124px;
+    height: 364px;
+    background-size: cover;
+    margin-top:-20px;
 }
-.search-input{
-   width: 962px; 
-   border: none;
-   outline: none;
-   color: rgba(98, 98, 98, 1);
-   text-decoration: none;
-   
-}
-@media screen and (max-width: 768px) {
-  .search-container {
-    width:50%;
-    margin-left: 10px;
-  }
-}  
-#search-input-main{
-    padding-top:30px ;
+.menu-title{
+    display: flex;
+    justify-content: start;
+    gap: 40px;
     text-decoration: none;
+    list-style: none;
+    font-size: 16px;
+    margin-left: 41px;
 }
 .m-name{
-  margin-left: 81px;
-} 
-@media screen and (max-width: 768px) {
-  .m-name {
-    width:50%;
-    margin-left: 10px;
-  }
-}   
-.stores-cards{
+    text-decoration: none;
+    list-style: none;
+    font-size: 16px;
+    color: rgba(98, 98, 98, 1);
+   }
+.m-first-name{
+    color: rgba(50, 116, 48, 1);
+    text-decoration: none;
+}
+.menu-line{
+    color: rgba(117, 117, 117, 0.2);
+}
+.menu-header{
+    font-size: 22px;
+    color: rgba(29, 29, 29, 1);
+    margin-top: 56px;
+    margin-left: 81px;
+}
+.menu-cards{
   display: flex;
   justify-content: center;
   gap: 16px;
   flex-wrap: wrap;
   width: 100%;
 }
-.s-container{
-  width: 308px;
-  height: 366px;
-}
-.stores-card-pic img:hover {
-  transform: scale(1.03);
-}
 
-.store-name {
-  margin-top: 16px;
-}
-
-.store-type {
-  color: rgba(98, 98, 98, 1);
-  font-size: 13px;
-}
-
-.store-time {
-  font-size: 13px;
-  color: rgba(29, 29, 29, 1);
-  margin-bottom: 34px;
-}
-
-.store-name,
-.store-type {
-  margin-bottom: 4px;
-}
-
-@media screen and (max-width: 768px) {
-  .stores-cards {
-    display: grid;
-    justify-content: space-between;
-    grid-template-columns: 368px 368px;
-    gap: 16px;
-    width:50%;
-    margin-left: 10px;
-    
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .stores-cards {
-    grid-template-columns: 1fr;
-  }
-}
 footer{
   background-color: black;
   margin: 80px auto;
